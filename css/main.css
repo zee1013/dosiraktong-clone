@@ -21,3 +21,9 @@ a{
     text-decoration: none;
     color: #333;
 }
+/* 공통 */
+.inner{
+    width: 95%;
+    max-width: 1420px;
+    margin: auto;
+}

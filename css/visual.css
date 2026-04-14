@@ -1,0 +1,25 @@
+.visual{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.sw-visual, .swiper-slide, .visual-box{
+    width: 100%;
+    height: 100%;
+}
+.visual-bg1{
+    background: url(../img/main_visual_1.jpg)no-repeat center;
+    background-size: cover;
+}
+.visual-bg2{
+    background: url(../img/main_visual_2.jpg)no-repeat center;
+    background-size: cover;
+}
+.visual-bg3{
+    background: url(../img/main_visual_3.jpg)no-repeat center;
+    background-size: cover;
+}
+.visual-bg4{
+    background: url(../img/main_visual_4.jpg)no-repeat center;
+    background-size: cover;
+}

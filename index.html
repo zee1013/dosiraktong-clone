@@ -53,15 +53,79 @@
 <link rel="manifest" href="assets/favicon/site.webmanifest" />
 <!-- css연결 -->
  <link rel="stylesheet" href="css/main.css">
+ <!-- 스와이퍼 -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- 자바스크립트 연결 -->
+     <script src="js/swiper.js"></script>
   </head>
   <body>
     <!-- 안내창 -->
      <!-- 위로가기버튼 -->
-      <!-- 상단 -->
-       <!-- 비주얼 -->
+     <div class="wrap">
+           <!-- 상단 -->
+            <header class="header">
+                <!-- 로고 -->
+                 <a href="#" class="logo"></a>
+                 <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="#"><span>ABOUT US</span></a></li>
+                        <li><a href="#"><span>제휴문의</span></a></li>
+                        <li><a href="#"><span>도시락멤버스</span></a></li>
+                        <li><a href="#"><span>와이파이도시락</span></a></li>
+                        <li><a href="#"><span>도시락유심</span></a></li>
+                        <li><a href="#"><span>도시락eSIM</span></a></li>
+                        <li><a href="#"><span>도시락모바일</span></a></li>
+                    </ul>
+                 </nav>
+                 <!-- 모바일 메뉴 버튼 -->
+                  <button class="mbt">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                 <!-- 모바일 메뉴 -->
+                  <div class="nav-mb">
+                    <ul class="nav-mb-gnb">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">도시락멤버스</a></li>
+                        <li><a href="#">와이파이도시락</a></li>
+                        <li><a href="#">도시락유심</a></li>
+                        <li><a href="#">도시락eSIM</a></li>
+                        <li><a href="#">도시락모바일</a></li>
+                    </ul>
+                  </div>
+            </header>
+        <!-- 비주얼 -->
+         <section class="visual">
+            <div class="swiper sw-visual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="visual-box visual-bg1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="visual-box visual-bg2"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="visual-box visual-bg3"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="visual-box visual-bg4"></div>
+                    </div>
+                </div>
+            </div>
+         </section>
         <!-- 서비스 -->
          <!-- 소개 -->
           <!-- 비즈니스 -->
            <!-- 하단 -->
+       </div>
+       
   </body>
 </html>
