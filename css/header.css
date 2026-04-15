@@ -12,6 +12,13 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0);
     /* background-color: darkolivegreen; */
+    transition: all 0.5s;
+}
+/* 스크롤 할 때 헤더 변경 */
+.header.active{
+    height: 80px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 /* 로고 */
 .logo{
@@ -19,6 +26,11 @@
     width: 125px;
     height: 30px;
     background: url(../img/logo_white.png) no-repeat center;
+    background-size: cover;
+}
+/* 스크롤 할 때 로고 변경 */
+.header.active .logo{
+    background: url(../img/logo.png) no-repeat center;
     background-size: cover;
 }
 /* 메뉴 */
@@ -61,6 +73,13 @@
 .gnb li a:hover span::after{
     width: 100%;
     opacity: 1;
+}
+/* 헤더 스크롤 했을 때 글씨 색 변경 */
+.header.active .gnb li a{
+    color: #222;
+}
+.header.active .gnb li a span::after{
+    background-color: #222;
 }
 /* 모바일 메뉴 버튼 */
 .mbt{
