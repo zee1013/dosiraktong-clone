@@ -8,6 +8,8 @@
 @import url(about.css);
 @import url(business.css);
 @import url(footer.css);
+/* 반응형 css */
+@import url(responsive.css);
 
 /* 공통영역 리셋 */
 *{
@@ -23,6 +25,9 @@ a{
     color: #333;
 }
 /* 공통 */
+html.active{
+    overflow: hidden;
+}
 .inner{
     width: 95%;
     max-width: 1420px;
