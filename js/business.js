@@ -13,4 +13,9 @@ window.addEventListener("load", () => {
       },
     },
   });
+  // 모달 창
+  const businessModal = document.querySelector(".business-modal")
+  businessModal.addEventListener("click", ()=>{
+    businessModal.style.display = "none"
+  })
 });

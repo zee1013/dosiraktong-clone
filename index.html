@@ -61,9 +61,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- waypoint -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- aos 적용 -->
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
  <!-- 스와이퍼 -->
     <!-- Link Swiper's CSS -->
     <link
@@ -81,6 +89,7 @@
   <body>
     <!-- 안내창 -->
      <!-- 위로가기버튼 -->
+      <button class="gotop"><i class="fa-solid fa-arrow-up"></i></button>
      <div class="wrap">
            <!-- 상단 -->
             <header class="header">
@@ -138,10 +147,10 @@
         <!-- 서비스 -->
          <section class="service">
           <div class="inner">
-            <h2 class="service-tilte"><span>도시락통</span> 서비스 둘러보기</h2>
+            <h2 class="service-tilte" data-aos="fade-up" data-aos-duration="800"><span>도시락통</span> 서비스 둘러보기</h2>
             <!-- 서비스 이미지 영역 -->
              <div class="service-wrap">
-              <div class="service-box1">
+              <div class="service-box1" data-aos="flip-left" data-aos-duration="800">
                 <a href="#">
                   <div class="service-bg service-bg1"></div>
                   <div class="service-box-wrap">
@@ -154,7 +163,7 @@
                   </div>
                 </a>
               </div>
-              <div class="service-box2">
+              <div class="service-box2" data-aos="flip-right" data-aos-duration="1200" data-aos-delay="300">
                 <a href="#">
                   <div class="service-bg service-bg2"></div>
                   <div class="service-box-wrap">
@@ -167,9 +176,9 @@
                   </div>
                 </a>
               </div>
-              <div class="service-box3">
+              <div class="service-box3" data-aos="flip-right" data-aos-duration="1400" data-aos-delay="400">
                 <a href="#">
-                  <div class="service-bg service-bg3"></div>
+                  <div class="service-bg service-bg3" ></div>
                   <div class="service-box-wrap">
                     <h3 class="service-box-title">도시락eSIM</h3>
                     <span class="service-box-desc">
@@ -255,8 +264,35 @@
             </div>
           </div>
         </div>
+        <!-- 비지니스 모달 -->
+         <div class="business-modal">
+          <img src="img/scroll_guide2.png" alt="scroll guide">
+         </div>
            </section>
            <!-- 하단 -->
+            <footer class="footer" id="footer">
+        <div class="inner">
+          <ul class="footer-list">
+            <li>
+              <span>상호 : ㈜와이드모바일<em class="footer-bar"></em></span>
+
+              <span
+                >통신판매업신고번호 : 제2018-서울서대문-0301호<em
+                  class="footer-bar"
+                ></em
+              ></span>
+
+              <span>사업자등록번호 : 121-81-66458</span>
+            </li>
+            <li>
+              고객센터 : <a href="tel:000-0000">1566-9070</a> (운영시간
+              9:00~18:00,<br class="footer-br" />
+              주말/공휴일/점심 12:00~13:00 제외)
+            </li>
+            <li><p>Copyright © WIDEMOBILE INC. Allright Reserved.</p></li>
+          </ul>
+        </div>
+      </footer>
        </div>
        
   </body>

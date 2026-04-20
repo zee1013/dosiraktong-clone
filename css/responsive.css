@@ -56,6 +56,26 @@
     .mbt.ani span:nth-child(3){
         transform: rotate(-45deg);
     }
+    /* 비주얼 */
+    .visual{
+        min-height: 800px;
+    }
+    .visual-bg1, .visual-bg2, .visual-bg3, .visual-bg4{
+        background-position: left 10% top;
+    }
+    /* 서비스 영역 */
+    .service{
+        padding: 100px 0;
+    }
+    .service .inner{
+        width: 70%;
+    }
+    .service-wrap{
+        grid-template-columns: 1fr;
+    }
+    .service-box2, .service-box3{
+        aspect-ratio: 70 / 33;
+    }
     /* about 영역 */
     .about{
         margin-bottom: 100px;
@@ -84,10 +104,31 @@
     .business a p{
         font-size: 16px;
     }
+    /* 비지니스 모달 */
+    .business-modal{
+        display: flex;
+    }
+}
+@media (max-width:640px){
+    .no-br{
+        display: block;
+    }
+    .footer-bar{
+        display: none;
+    }
+    .footer-br{
+        display: block;
+    }
 }
 @media (max-width:480px){
     .inner{
         width: 90% !important;
+    }
+    .service{
+        padding: 70px 0;
+    }
+    .service-tilte{
+        font-size: 24px;
     }
     .about-title{
         font-size: 24px;
@@ -100,5 +141,14 @@
     }
     .sw-business{
         height: 300px;
+    }
+    .business-modal{
+        height: 300px;
+    }
+    .business-modal img{
+        width: 150px;
+    }
+    .service-box1, .service-box2, .service-box3{
+        aspect-ratio: 350/220;
     }
 }
