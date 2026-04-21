@@ -6,6 +6,12 @@ window.addEventListener("load", ()=>{
   let footer = document.querySelector(".footer")
   let footerY = footer.offsetTop
   const gotop = document.querySelector(".gotop")
+  gotop.addEventListener("click", ()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth",
+    })
+  })
   // console.log(footerY);
   // 전체 높이의 95% 됐을 때
   let waypoint_footer = new Waypoint({
